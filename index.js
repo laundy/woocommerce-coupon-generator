@@ -49,7 +49,11 @@ const wooCoupons = customerRecords.map((customerRecord) => {
         code: customerRecord.code,
         discount_type: "percent",
         amount: customerRecord.amount,
-        individual_use: true, // TODO
+        individual_use: true,
+        free_shipping: true,
+        usage_limit: 1,
+        exclude_sale_items: true,
+        minimum_amount: config.couponMinimumAmount,
         meta_data: [{
             key: "customer_number",
             value: customerRecord.customer

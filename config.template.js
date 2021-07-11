@@ -6,5 +6,6 @@ module.exports = {
     filepath: "",
     csvSeparator: ";",
     couponPrefix: "",
-    couponLengthWithoutPrefixAndSuffix: 6
+    couponLengthWithoutPrefixAndSuffix: 6,
+    couponMinimumAmount: 0
 }
